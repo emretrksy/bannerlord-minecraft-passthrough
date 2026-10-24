@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <LangVersion>10.0</LangVersion>
+    <Nullable>disable</Nullable>
+    <AssemblyName>MinecraftPassthrough</AssemblyName>
+    <RootNamespace>MinecraftPassthrough</RootNamespace>
+    <Platforms>x64</Platforms>
+    <PlatformTarget>x64</PlatformTarget>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <BannerlordDir Condition="'$(BannerlordDir)' == ''">C:\Program Files (x86)\Steam\steamapps\common\Mount &amp; Blade II Bannerlord</BannerlordDir>
+    <GameBin>$(BannerlordDir)\bin\Win64_Shipping_Client</GameBin>
+    <NativeBin>$(BannerlordDir)\Modules\Native\bin\Win64_Shipping_Client</NativeBin>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Lib.Harmony" Version="2.3.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="$(GameBin)\System.Numerics.Vectors.dll" Private="false" Aliases="vectors" />
+    <Reference Include="$(GameBin)\TaleWorlds.CampaignSystem.dll" Private="false" />
+    <Reference Include="$(GameBin)\TaleWorlds.Core.dll" Private="false" />
+    <Reference Include="$(GameBin)\TaleWorlds.Core.ViewModelCollection.dll" Private="false" />
+    <Reference Include="$(GameBin)\TaleWorlds.SaveSystem.dll" Private="false" />
+    <Reference Include="$(GameBin)\TaleWorlds.Engine.dll" Private="false" />
+    <Reference Include="$(GameBin)\TaleWorlds.InputSystem.dll" Private="false" />
+    <Reference Include="$(GameBin)\TaleWorlds.Library.dll" Private="false" />
+    <Reference Include="$(GameBin)\TaleWorlds.Localization.dll" Private="false" />
+    <Reference Include="$(GameBin)\TaleWorlds.MountAndBlade.dll" Private="false" />
+    <Reference Include="$(GameBin)\TaleWorlds.MountAndBlade.ViewModelCollection.dll" Private="false" />
+    <Reference Include="$(GameBin)\TaleWorlds.ObjectSystem.dll" Private="false" />
+    <Reference Include="$(GameBin)\TaleWorlds.DotNet.dll" Private="false" />
+    <Reference Include="$(GameBin)\TaleWorlds.ScreenSystem.dll" Private="false" />
+    <Reference Include="$(NativeBin)\TaleWorlds.MountAndBlade.View.dll" Private="false" />
+  </ItemGroup>
+
+  <Target Name="AssembleModule" AfterTargets="Build">
+    <PropertyGroup>
+      <ModuleOut>$(MSBuildProjectDirectory)\..\build\Modules\MinecraftPassthrough</ModuleOut>
+    </PropertyGroup>
+    <ItemGroup>
+      <ModuleFiles Include="$(MSBuildProjectDirectory)\Module\**\*" />
+      <ModuleDlls Include="$(OutputPath)MinecraftPassthrough.dll;$(OutputPath)0Harmony.dll" />
+    </ItemGroup>
+    <Copy SourceFiles="@(ModuleFiles)" DestinationFolder="$(ModuleOut)\%(RecursiveDir)" />
+    <Copy SourceFiles="@(ModuleDlls)" DestinationFolder="$(ModuleOut)\bin\Win64_Shipping_Client" />
+  </Target>
+
+</Project>

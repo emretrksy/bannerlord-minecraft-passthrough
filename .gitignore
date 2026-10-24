@@ -1,0 +1,32 @@
+# Downloaded toolchains, decompiled references and third-party binaries (see README: Building)
+.tools/
+
+# Build output
+build/
+bannerlord-mod/bin/
+bannerlord-mod/obj/
+minecraft-mod/.gradle/
+minecraft-mod/build/
+minecraft-mod/run/
+
+# Python
+__pycache__/
+*.pyc
+
+# IDEs
+.vs/
+.idea/
+*.user
+
+# Shortcut made by tools/create-shortcut.ps1 -Destination; it holds this machine's paths.
+*.lnk
+
+# Release packages made by tools/package.ps1
+dist/
+
+# Raw screenshots; the READMEs use the compressed JPG copies
+docs/images/*.png
+
+# Personal notes kept out of the repository
+docs/PROJE_REHBERI.md
+docs/release/YAYIN_KONTROL_LISTESI.md

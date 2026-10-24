@@ -1,0 +1,32 @@
+{
+	"required": true,
+	"package": "blpassthrough.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"client": [
+		"AbstractClientPlayerMixin",
+		"AbstractHorseMixin",
+		"CameraAccessor",
+		"CameraMixin",
+		"CreeperMixin",
+		"FramerateLimitTrackerMixin",
+		"GameRendererMixin",
+		"GlCommandEncoderMixin",
+		"GuiMixin",
+		"ItemMixin",
+		"KeyMappingAccessor",
+		"LevelExtractorMixin",
+		"MinecraftMixin",
+		"MobAccessor",
+		"MouseHandlerMixin",
+		"MusicManagerMixin",
+		"PlayerMixin",
+		"ProjectileMixin",
+		"ProxyHurtMixin",
+		"ServerExplosionMixin",
+		"ServerLevelMixin",
+		"ServerPlayerMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

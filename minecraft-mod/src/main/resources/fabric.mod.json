@@ -1,0 +1,18 @@
+{
+	"schemaVersion": 1,
+	"id": "blpassthrough",
+	"version": "${version}",
+	"name": "Bannerlord Passthrough",
+	"description": "Lets Mount & Blade II: Bannerlord drive Minecraft's camera and player, and hands Minecraft's colour + depth back to Bannerlord for compositing.",
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"client": ["blpassthrough.Passthrough"]
+	},
+	"mixins": ["blpassthrough.mixins.json"],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25"
+	}
+}

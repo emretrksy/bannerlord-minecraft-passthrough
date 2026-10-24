@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+  <tags>
+    <tag language="Türkçe" />
+  </tags>
+  <strings>
+    <string id="blmc_trader_option" text="Minecraft tüccarı (Steve'in eşyaları)" />
+    <string id="blmc_smith_option" text="Minecraft demircisi (Steve'in eşyalarını onar)" />
+    <string id="blmc_smith_busy" text="Steve'in eşyaları zaten onarılıyor: bir sonraki görevde hazır." />
+    <string id="blmc_smith_nothing" text="Steve'in onarılacak eşyası yok." />
+    <string id="blmc_smith_title" text="Minecraft demircisi" />
+    <string id="blmc_smith_text" text="Steve'in yıpranmış eşyalarının hepsi {PRICE} dinara onarılır (kesende {GOLD} var). Onarım bir sonraki görevde hazır olur." />
+    <string id="blmc_smith_mend" text="Onar" />
+    <string id="blmc_smith_need" text="Onarım için {PRICE} dinar gerekiyor." />
+    <string id="blmc_cancel" text="Vazgeç" />
+    <string id="blmc_buy" text="Satın al" />
+    <string id="blmc_buy_total" text="Satın al ({TOTAL} dinar)" />
+    <string id="blmc_shop_selected" text="Seçilenlerin toplamı: {TOTAL} dinar" />
+    <string id="blmc_shop_short" text="{SHORT} dinar eksik" />
+    <string id="blmc_not_enough" text="Yeterli dinarın yok" />
+    <string id="blmc_ware_line" text="{NAME} ×{COUNT} — {PRICE} dinar" />
+    <string id="blmc_shop_text" text="Kesende {GOLD} dinar var. Aldıkların bir sonraki savaşta Steve'in envanterine eklenir." />
+    <string id="blmc_shop_rare" text="Nadir eşyalar yalnızca zengin şehirlerde satılır." />
+    <string id="blmc_shop_title" text="Minecraft tüccarı — {TOWN}" />
+    <string id="blmc_shop_need" text="Bunlar için {TOTAL} dinar gerekiyor." />
+    <string id="blmc_shop_paid" text="{COUNT} eşya için {TOTAL} dinar ödedin. Bir sonraki savaşta Steve'in envanterinde." />
+    <string id="blmc_error" text="Minecraft Passthrough: {WHERE} hatası ({TYPE}). Ayrıntı rgl_log'da." />
+    <string id="blmc_no_answer" text="Minecraft yanıt vermedi: açık olduğundan emin ol." />
+    <string id="blmc_on" text="Minecraft passthrough açık" />
+    <string id="blmc_off" text="Minecraft passthrough kapalı" />
+
+    <string id="blmc_ware_bread" text="Ekmek" />
+    <string id="blmc_ware_cooked_beef" text="Pişmiş et" />
+    <string id="blmc_ware_arrow" text="Ok" />
+    <string id="blmc_ware_shield" text="Kalkan" />
+    <string id="blmc_ware_bow" text="Yay" />
+    <string id="blmc_ware_crossbow" text="Arbalet" />
+    <string id="blmc_ware_cobblestone" text="Kırıktaş" />
+    <string id="blmc_ware_snowball" text="Kartopu" />
+    <string id="blmc_ware_egg" text="Yumurta" />
+    <string id="blmc_ware_fire_charge" text="Ateş topu" />
+    <string id="blmc_ware_stone_sword" text="Taş kılıç" />
+    <string id="blmc_ware_stone_axe" text="Taş balta" />
+    <string id="blmc_ware_stone_spear" text="Taş mızrak" />
+    <string id="blmc_ware_iron_sword" text="Demir kılıç" />
+    <string id="blmc_ware_iron_axe" text="Demir balta" />
+    <string id="blmc_ware_iron_spear" text="Demir mızrak" />
+    <string id="blmc_ware_leather_helmet" text="Deri başlık" />
+    <string id="blmc_ware_leather_chestplate" text="Deri zırh" />
+    <string id="blmc_ware_leather_leggings" text="Deri pantolon" />
+    <string id="blmc_ware_leather_boots" text="Deri çizme" />
+    <string id="blmc_ware_chainmail_helmet" text="Zincir miğfer" />
+    <string id="blmc_ware_chainmail_chestplate" text="Zincir zırh" />
+    <string id="blmc_ware_chainmail_leggings" text="Zincir pantolon" />
+    <string id="blmc_ware_chainmail_boots" text="Zincir çizme" />
+    <string id="blmc_ware_iron_helmet" text="Demir miğfer" />
+    <string id="blmc_ware_iron_chestplate" text="Demir zırh" />
+    <string id="blmc_ware_iron_leggings" text="Demir pantolon" />
+    <string id="blmc_ware_iron_boots" text="Demir çizme" />
+    <string id="blmc_ware_diamond_sword" text="Elmas kılıç" />
+    <string id="blmc_ware_diamond_helmet" text="Elmas miğfer" />
+    <string id="blmc_ware_diamond_chestplate" text="Elmas zırh" />
+    <string id="blmc_ware_diamond_leggings" text="Elmas pantolon" />
+    <string id="blmc_ware_diamond_boots" text="Elmas çizme" />
+    <string id="blmc_ware_golden_apple" text="Altın elma" />
+    <string id="blmc_ware_vlandian_crossbow" text="Vlandia arbaleti" />
+    <string id="blmc_ware_spectral_arrow" text="Işıltılı ok" />
+    <string id="blmc_ware_vlandian_chestplate" text="Vlandia demir zırhı" />
+    <string id="blmc_ware_tnt" text="TNT" />
+    <string id="blmc_ware_flint_and_steel" text="Çakmak taşı" />
+    <string id="blmc_ware_diamond_axe" text="Elmas balta" />
+    <string id="blmc_ware_battanian_arrows" text="Battania okları" />
+    <string id="blmc_ware_ender_pearl" text="Ender incisi" />
+    <string id="blmc_ware_firework_rocket" text="Havai fişek" />
+    <string id="blmc_ware_diamond_spear" text="Elmas mızrak" />
+    <string id="blmc_ware_wind_charge" text="Rüzgâr küresi" />
+    <string id="blmc_ware_creeper_spawn_egg" text="Creeper yumurtası" />
+    <string id="blmc_ware_trident" text="Üç dişli mızrak" />
+    <string id="blmc_ware_mace" text="Gürz (mace)" />
+    <string id="blmc_ware_totem_of_undying" text="Ölümsüzlük totemi" />
+    <string id="blmc_ware_netherite_sword" text="Netherit kılıç" />
+    <string id="blmc_ware_elytra" text="Elytra" />
+  </strings>
+</base>
