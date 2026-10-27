@@ -200,6 +200,7 @@ olması lazım.
 
 | Sorun | Çözüm |
 |---|---|
+| Açılışta "Cannot load: ...\MinecraftPassthrough.dll" | Windows indirilen dosyaları engellemiş. `Modules\MinecraftPassthrough\bin\Win64_Shipping_Client` içindeki `MinecraftPassthrough.dll` ve `0Harmony.dll`'e sağ tık > Özellikler > **Engellemeyi kaldır**'ı işaretle ya da `Install.bat`'ı yeniden çalıştır. |
 | Steve görünmüyor | Bannerlord'da **Home**'a bas ve **MCPassthrough** tekniğini işaretle. Minecraft'ın açık ve küçültülmemiş olduğuna bak. |
 | Savaş başladı ama bir süre bir şey olmuyor | Minecraft hâlâ yüklüyor, birkaç saniye bekle. |
 | Haritada "Minecraft yanıt vermedi" | Minecraft'ı (Bannerlord x Minecraft profili) aç. |

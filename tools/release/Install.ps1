@@ -64,7 +64,8 @@ Write-Host "Bannerlord: $BannerlordDir"
 Write-Host "Minecraft:  $MinecraftDir"
 Write-Host ""
 
-$sourceBin = Join-Path $package "Bannerlord\bin\Win64_Shipping_Client"
+Get-ChildItem -Recurse -File $package | Unblock-File
+$sourceBin =Join-Path $package "Bannerlord\bin\Win64_Shipping_Client"
 $moduleTarget = Join-Path $BannerlordDir "Modules\MinecraftPassthrough"
 New-Item -ItemType Directory -Force $moduleTarget | Out-Null
 Copy-Item -Recurse -Force (Join-Path $package "Bannerlord\Modules\MinecraftPassthrough\*") $moduleTarget

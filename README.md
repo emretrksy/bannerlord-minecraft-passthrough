@@ -195,6 +195,7 @@ On the **campaign map**, **E** opens Steve's inventory over the map. Minecraft h
 
 | Problem | Fix |
 |---|---|
+| "Cannot load: ...\MinecraftPassthrough.dll" at startup | Windows blocked the downloaded files. Right-click `MinecraftPassthrough.dll` and `0Harmony.dll` in `Modules\MinecraftPassthrough\bin\Win64_Shipping_Client` > Properties > tick **Unblock**, or run `Install.bat` again. |
 | Steve isn't drawn | Press **Home** in Bannerlord and tick the **MCPassthrough** technique. Check that Minecraft is running and not minimised. |
 | The battle starts but nothing happens for a bit | Minecraft is still loading; give it a few seconds. |
 | "Minecraft did not answer" on the map | Start Minecraft (the Bannerlord x Minecraft profile). |
